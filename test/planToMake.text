@@ -1,1 +1,43 @@
+※すべてプライマリーキーあり
+
 userTable
+    id(email)
+    password
+    name
+    address
+    phone（柳メモに追加。ピックアップに現れない場合、電話する必要ありとの想定）
+
+pickerTable
+    id
+    password
+    name
+
+itemTable
+    id
+    商品名
+    商品説明文（柳メモに追加。商品の説明文は必要だと思ったので）
+    金額
+    画像URL
+    店舗ID
+
+kanriTable
+    モール名
+    id
+    password
+    name
+
+orderTable
+    注文番号
+    pickしたpickerのID
+    用意ステータス（ピック済みorNot）
+    届け先（住所/空港でのピックアップ）
+
+cartTable
+    注文番号
+    商品名
+    注文点数
+
+storeTable（店舗向け実績画面に着手できた場合）
+    店舗ID
+    店舗名
+    password
